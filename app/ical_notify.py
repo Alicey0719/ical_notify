@@ -90,6 +90,7 @@ def main():
     sw.avatar_url = os.environ.get("MESSAGE_AVATAR_URL", "")
     sw.author_name = os.environ.get("MESSAGE_AUTHORNAME", "iCal Notify")
     sw.author_icon_url = os.environ.get("MESSAGE_AUTHORICON_URL", "")
+    sw.author_url = os.environ.get("MESSAGE_AUTHOR_URL", "")
 
     # get current iCal file
     current_content = fetch_ical(ICAL_URL)
